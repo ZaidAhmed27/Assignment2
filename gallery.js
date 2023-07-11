@@ -5,28 +5,28 @@ const captionElement = document.getElementById('image-caption');
 
 const galleryItems = [
   {
-    largeImage: 'images/flowers-pink-large.jpg',
-    thumbnail: 'images/flowers-pink-small.jpg',
+    largeImage: 'flowers-pink-large.jpg',
+    thumbnail: 'flowers-pink-small.jpg',
     caption: 'Market in Münster, North Rhine-Westphalia, Germany '
   },
   {
-    largeImage: 'images/flowers-purple-large.jpg',
-    thumbnail: 'images/flowers-purple-small.jpg',
+    largeImage: 'flowers-purple-large.jpg',
+    thumbnail: 'flowers-purple-small.jpg',
     caption: 'Poppies in cornfield, Dülmen, North Rhine-Westphalia, Germany'
   },
   {
-    largeImage: 'images/flowers-red-large.jpg',
-    thumbnail: 'images/flowers-red-small.jpg',
+    largeImage: 'flowers-red-large.jpg',
+    thumbnail: 'flowers-red-small.jpg',
     caption: 'Daffodils in Sentmaring park, Münster, North Rhine-Westfalia, Germany'
   },
   {
-    largeImage: 'images/flowers-white-large.jpg',
-    thumbnail: 'images/flowers-white-small.jpg',
+    largeImage: 'flowers-white-large.jpg',
+    thumbnail: 'flowers-white-small.jpg',
     caption: 'Sentmaring Park, Münster, North Rhine-Westphalia, Germany'
   },
   {
-    largeImage: 'images/flowers-yellow-large.jpg',
-    thumbnail: 'images/flowers-yellow-small.jpg',
+    largeImage: 'flowers-yellow-large.jpg',
+    thumbnail: 'flowers-yellow-small.jpg',
     caption: 'Sunflowers in the hamlet Dernekamp, Kirchspiel, Dülmen, North Rhine-Westphalia, Germany'
   }
   // Add more gallery items here as needed
