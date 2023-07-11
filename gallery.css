@@ -1,0 +1,124 @@
+/* Add some styling for the selected thumbnail */
+.selected-thumbnail {
+    border: 2px solid red;
+}
+
+
+/* Add some styling for the selected thumbnail */
+.selected-thumbnail {
+    border: 2px solid red;
+    filter: none; /* Remove grayscale filter from the selected thumbnail */
+  }
+  
+  /* Apply grayscale filter to inactive thumbnails */
+  #thumbnail-list img:not(.selected-thumbnail) {
+    filter: grayscale(100%);
+  }
+
+/* CSS styles for the body */
+body {
+    font-family: Arial, sans-serif; /* Set the font family to Arial or sans-serif */
+    background-color: #f5f5f5; /* Set the background color to a light gray */
+    margin: 0; /* Remove any default margin */
+    padding: 20px; /* Add padding around the content */
+  }
+  
+  /* CSS styles for the heading */
+  h1 {
+    color: #333; /* Set the heading color to a dark gray */
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 30px; /* Add bottom margin to create space below the heading */
+  }
+  
+  /* CSS styles for the gallery section */
+  #gallery {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    background-color: #fff; /* Set the background color to white */
+    padding: 30px; /* Add padding around the gallery content */
+    border-radius: 10px; /* Add rounded corners to the gallery */
+    text-align: center; /* Center-align the content inside the gallery */
+  }
+  
+  /* CSS styles for the figure element */
+  figure {
+    position: relative; /* Set the position to relative for positioning the caption */
+    margin-bottom: 20px; /* Add bottom margin to create space below the figure */
+  }
+  
+  /* CSS styles for the featured image */
+  #featured-image {
+    display: block; /* Make the featured image a block element */
+    margin: 0 auto; /* Center-align the featured image horizontally */
+    max-width: 100%; /* Ensure the featured image doesn't exceed the container width */
+    height: auto; /* Automatically adjust the height while maintaining aspect ratio */
+    border-radius: 5px; /* Add rounded corners to the featured image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    transition: all 0.3s ease; /* Apply smooth transition for hover effect */
+  }
+  
+  /* CSS styles for the hover effect on the featured image */
+  #featured-image:hover {
+    transform: scale(1.05); /* Scale up the featured image on hover */
+  }
+  
+  /* CSS styles for the image caption */
+  #image-caption {
+    position: absolute; /* Position the caption relative to the figure */
+    bottom: 10px; 
+    left: 10px; 
+    color: #fff; /* Set the caption text color to white */
+    font-size: 14px; /* Set the caption font size */
+    background-color: rgba(0, 0, 0, 0.7); /* Set a semi-transparent black background for the caption */
+    padding: 5px 10px; 
+    border-radius: 3px; 
+  }
+  
+  /* CSS styles for the thumbnail list */
+  #thumbnail-list {
+    display: flex; /* Display the thumbnails in a flex container */
+    justify-content: center; /* Center-align the thumbnails horizontally */
+    flex-wrap: wrap; /* Allow the thumbnails to wrap to the next line if necessary */
+    margin-top: 20px; /* Add top margin to create space above the thumbnail list */
+  }
+  
+  /* CSS styles for the list items */
+  li {
+    margin: 10px; /* Add margin around the list items to create spacing */
+  }
+  
+  /* CSS styles for the thumbnail images */
+  .thumbnail-image {
+    display: block; /* Make the thumbnail image a block element */
+    width: 80px; /* Set a fixed width for the thumbnail image */
+    height: 80px; /* Set a fixed height for the thumbnail image */
+    border-radius: 50%; /* Make the thumbnail image a circle by setting border-radius to 50% */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    transition: all 0.3s ease; /* Apply smooth transition for hover effect */
+    filter: grayscale(100%); /* Apply grayscale filter to the thumbnail image */
+  }
+  
+  /* CSS styles for the hover effect on the thumbnail images */
+  .thumbnail-image:hover {
+    transform: scale(1.1); /* Scale up the thumbnail image on hover */
+  }
+  
+  /* CSS styles for the selected thumbnail image */
+  .selected-thumbnail {
+    border: 2px solid red; /* Add a red border to indicate the selected thumbnail */
+    filter: none; /* Remove the grayscale filter from the selected thumbnail */
+  }
+  .selected-thumbnail {
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
